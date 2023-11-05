@@ -2,7 +2,8 @@
 
 ## Project Overview:
 
-Welcome to my Resume Portfolio! This portfolio serves as a showcase of my skills, experiences, projects, and qualifications. It's a platform for you to get to know me better both personally and professionally. This README will guide you through the various sections and features of my portfolio.
+My name is Igbinlade Oluwapelumi & Welcome to my Resume Portfolio! 
+This portfolio serves as a showcase of my skills, experiences, projects, and qualifications. It's a platform for you to get to know me better both personally and professionally. This README will guide you through the various sections and features of my portfolio.
 
 ## Features and Functionality:
 
@@ -13,6 +14,7 @@ Welcome to my Resume Portfolio! This portfolio serves as a showcase of my skills
 ## Technologies Used:
 
 This project harnesses the power of several core technologies and frameworks to achieve its objectives, including:
+
 + HTML: For structuring content and layout.
 - CSS: To style and enhance the visual experience.
 * JavaScript: For interactivity and dynamic elements.
@@ -20,21 +22,18 @@ This project harnesses the power of several core technologies and frameworks to 
 
 ## Screenshots/ Demo:
 
-![demo1](/images/Screenshot%20(72).png)
-![demo2](/images/Screenshot%20(73).png)
-![demo3](/images/Screenshot%20(74).png)
 
 ## Roadmap and Future Enhancements:
 
-About Me I am a software Engineer and Digital Marketer with a passion for cyber security. I love watching football, also a MANCHESTER UNITED fan, and am interested in knowing new trends and believe that the combination of my strong analytic skills, as well as marketing skills, this will make me a valuable asset to any team. You can learn more about me on the About Me page.
+About Me: I am a software Engineer and Digital Marketer with a passion for Backend Security. I love watching football, also a MANCHESTER UNITED fan, and am interested in knowing new trends and believe that the combination of my strong analytic skills, as well as marketing skills will make me a valuable asset to any team. You can learn more about me on the About Me page.
 
-Skills My skills span a wide range of technical and soft skills.
+Skills: My skills span a wide range of marketing and soft skills.
 
-Experience My professional journey has been both exciting and challenging. I've had the privilege of working in handling a number of projects, where I honed my skills in problem-solving skills. To learn more about my work history, check out the Experience page.
+Experience: My professional journey has been both exciting and challenging. I've had the privilege of working in handling a number of projects, where I honed my skills in problem-solving skills. To learn more about my work history, check out the Experience page.
 
-Projects I've worked on a variety of projects, from SAFEMA, each highlighting different aspects of my abilities. These projects reflect my dedication to delivering high-quality work. Explore my projects on the Projects page.
+Projects I've worked on a variety of projects, from EXAMSTARK.COM to varieties of marketing gigs. This project reflect my dedication to delivering high-quality work.
 
-Contact I'm always open to new opportunities and collaborations. If you'd like to get in touch, feel free to reach out to me at j.malong@alustudent.com. You can also connect with me on LinkedIn, Twitter, or GitHub through the links provided on the Contact page.
+Contact I'm always open to new opportunities and collaborations. If you'd like to get in touch, feel free to reach out to me at with my contact info below. You can also connect with me on Instagram, Gmail, Twitter, or GitHub through the links provided.
 
 Getting Started To explore my portfolio, simply visit MY PORTFOLIO. You can navigate through the sections using the menu, and each page contains detailed information about my background and experiences.
 
