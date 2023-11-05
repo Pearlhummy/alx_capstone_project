@@ -21,7 +21,7 @@ body {
   line-height: 1.5;
   color: #222e39;
   text-align: left;
-  background-color: #fcfcfc;
+  background-color: #6f2929;
 }
  
 a {
@@ -36,7 +36,7 @@ a:hover {
 }
  
 h1,h2,h3,h4,h5,h6,p{
-  color: #020202 !important;
+  color: #ffffff !important;
 } 
 
 
