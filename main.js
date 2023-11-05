@@ -18,7 +18,7 @@
           
           $('html, body').animate({
               scrollTop: $(this.hash).offset().top - 45
-          }, 1000, 'easeInOutExpo');
+          }, 1500, 'easeInOutExpo');
           
           if ($(this).parents('.navbar-nav').length) {
               $('.navbar-nav .active').removeClass('active');
@@ -33,8 +33,8 @@
       var typed_strings = $('.typed-text').text();
       var typed = new Typed('.typed-text-output', {
           strings: typed_strings.split(', '),
-          typeSpeed: 105,
-          backSpeed: 18,
+          typeSpeed: 100,
+          backSpeed: 20,
           smartBackspace: false,
           loop: true
       });
@@ -74,7 +74,7 @@
       $('.progress .progress-bar').each(function () {
           $(this).css("width", $(this).attr("aria-valuenow") + '%');
       });
-  }, {offset: '75%'});
+  }, {offset: '80%'});
 
 
   // Portfolio isotope and filter
@@ -92,7 +92,7 @@
   
   // Back to top button
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 150) {
+      if ($(this).scrollTop() > 200) {
           $('.back-to-top').fadeIn('slow');
       } else {
           $('.back-to-top').fadeOut('slow');
@@ -107,12 +107,11 @@
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
       autoplay: true,
-      smartSpeed: 1000,
+      smartSpeed: 1500,
       dots: true,
       loop: true,
       items: 1
   });
   
 })(jQuery);
-
 
