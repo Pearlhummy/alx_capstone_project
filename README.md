@@ -35,7 +35,7 @@ Skills: My skills span a wide range of marketing and soft skills.
 
 Experience: My professional journey has been both exciting and challenging. I've had the privilege of working in handling a number of projects, where I honed my skills in problem-solving skills. To learn more about my work history, check out the Experience page.
 
-Projects I've worked on a variety of projects, from EXAMSTARK.COM to varieties of marketing gigs. This project reflect my dedication to delivering high-quality work.
+Projects: I've worked on a variety of projects, from EXAMSTARK.COM to MEA and varieties of marketing gigs. This project reflect my dedication to delivering high-quality work.
 
 Contact I'm always open to new opportunities and collaborations. If you'd like to get in touch, feel free to reach out to me at with my contact info below. You can also connect with me on Instagram, Gmail, Twitter, or GitHub through the links provided.
 
