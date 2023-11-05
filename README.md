@@ -18,6 +18,7 @@ This project harnesses the power of several core technologies and frameworks to 
 + HTML: For structuring content and layout.
 - CSS: To style and enhance the visual experience.
 * JavaScript: For interactivity and dynamic elements.
+- PHP
 
 
 ## Screenshots/ Demo:
