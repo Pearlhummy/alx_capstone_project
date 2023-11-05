@@ -1,117 +1,116 @@
-(function ($) {
-  "use strict";
-
-  // Navbar on scrolling
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 200) {
-          $('.navbar').fadeIn('slow').css('display', 'flex');
+(function () {
+    "use strict";
+  
+    // Navbar on scrolling
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 200) {
+        document.querySelector('.navbar').style.display = 'flex';
       } else {
-          $('.navbar').fadeOut('slow').css('display', 'none');
+        document.querySelector('.navbar').style.display = 'none';
       }
-  });
-
-
-  // Smooth scrolling on the navbar links
-  $(".navbar-nav a").on('click', function (event) {
-      if (this.hash !== "") {
+    });
+  
+    // Smooth scrolling on the navbar links
+    var navbarLinks = document.querySelectorAll(".navbar-nav a");
+    navbarLinks.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        if (this.hash !== "") {
           event.preventDefault();
-          
-          $('html, body').animate({
-              scrollTop: $(this.hash).offset().top - 45
-          }, 1500, 'easeInOutExpo');
-          
-          if ($(this).parents('.navbar-nav').length) {
-              $('.navbar-nav .active').removeClass('active');
-              $(this).closest('a').addClass('active');
+  
+          var target = document.querySelector(this.hash);
+          if (target) {
+            window.scroll({
+              top: target.offsetTop - 45,
+              behavior: "smooth"
+            });
+  
+            // Remove the "active" class from other navbar links
+            navbarLinks.forEach(function (navLink) {
+              navLink.closest("a").classList.remove("active");
+            });
+  
+            // Add the "active" class to the clicked link
+            this.closest("a").classList.add("active");
           }
-      }
-  });
-
-
-  // Typed Initiate
-  if ($('.typed-text-output').length == 1) {
-      var typed_strings = $('.typed-text').text();
-      var typed = new Typed('.typed-text-output', {
-          strings: typed_strings.split(', '),
-          typeSpeed: 100,
-          backSpeed: 20,
-          smartBackspace: false,
-          loop: true
+        }
       });
-  }
-
-
-  // Modal Video
-  $(document).ready(function () {
-      var $videoSrc;
-      $('.btn-play').click(function () {
-          $videoSrc = $(this).data("src");
+    });
+  
+    // Typed Initiate
+    var typedTextOutput = document.querySelector('.typed-text-output');
+    if (typedTextOutput) {
+      var typedText = document.querySelector('.typed-text').textContent;
+      var typed = new Typed(typedTextOutput, {
+        strings: typedText.split(', '),
+        typeSpeed: 100,
+        backSpeed: 20,
+        smartBackspace: false,
+        loop: true
       });
-      console.log($videoSrc);
-
-      $('#videoModal').on('shown.bs.modal', function (e) {
-          $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-      })
-
-      $('#videoModal').on('hide.bs.modal', function (e) {
-          $("#video").attr('src', $videoSrc);
-      })
-  });
-
-
-  // Scroll to Bottom
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-          $('.scroll-to-bottom').fadeOut('slow');
+    }
+  
+    // Scroll to Bottom
+    window.addEventListener("scroll", function () {
+      var scrollBtn = document.querySelector('.scroll-to-bottom');
+      if (window.scrollY > 100) {
+        scrollBtn.style.display = 'none';
       } else {
-          $('.scroll-to-bottom').fadeIn('slow');
+        scrollBtn.style.display = 'block';
       }
-  });
-
-
-  // Skills
-  $('.skill').waypoint(function () {
-      $('.progress .progress-bar').each(function () {
-          $(this).css("width", $(this).attr("aria-valuenow") + '%');
-      });
-  }, {offset: '80%'});
-
-
-  // Portfolio isotope and filter
-  var portfolioIsotope = $('.portfolio-container').isotope({
+    });
+  
+    // Skills
+    var skills = document.querySelectorAll('.skill');
+    skills.forEach(function (skill) {
+      skill.addEventListener('waypoint', function () {
+        var progressBar = skill.querySelector('.progress .progress-bar');
+        progressBar.style.width = progressBar.getAttribute("aria-valuenow") + '%';
+      }, { offset: '80%' });
+    });
+  
+    // Portfolio isotope and filter
+    var portfolioIsotope = new Isotope('.portfolio-container', {
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
-  });
-  $('#portfolio-flters li').on('click', function () {
-      $("#portfolio-flters li").removeClass('active');
-      $(this).addClass('active');
-
-      portfolioIsotope.isotope({filter: $(this).data('filter')});
-  });
+    });
   
+    var portfolioFilters = document.querySelectorAll('#portfolio-flters li');
+    portfolioFilters.forEach(function (filter) {
+      filter.addEventListener('click', function () {
+        portfolioFilters.forEach(function (item) {
+          item.classList.remove('active');
+        });
+        this.classList.add('active');
+        portfolioIsotope.arrange({ filter: this.getAttribute('data-filter') });
+      });
+    });
   
-  // Back to top button
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 200) {
-          $('.back-to-top').fadeIn('slow');
+    // Back to top button
+    window.addEventListener("scroll", function () {
+      var backToTopBtn = document.querySelector('.back-to-top');
+      if (window.scrollY > 200) {
+        backToTopBtn.style.display = 'block';
       } else {
-          $('.back-to-top').fadeOut('slow');
+        backToTopBtn.style.display = 'none';
       }
-  });
-  $('.back-to-top').click(function () {
-      $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-      return false;
-  });
-
-
-  // Testimonials carousel
-  $(".testimonial-carousel").owlCarousel({
+    });
+  
+    var backToTopLink = document.querySelector('.back-to-top');
+    backToTopLink.addEventListener('click', function (event) {
+      event.preventDefault();
+      window.scroll({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  
+    // Testimonials carousel
+    $(".testimonial-carousel").owlCarousel({
       autoplay: true,
       smartSpeed: 1500,
       dots: true,
       loop: true,
       items: 1
-  });
+    });
+  })();
   
-})(jQuery);
-
