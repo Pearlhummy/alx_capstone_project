@@ -23,6 +23,7 @@ This project harnesses the power of several core technologies and frameworks to 
 ## Screenshots/ Demo:
 
 ![Alt text](<Screen Shot 2023-11-05 at 11.24.30 AM.png>)
+![Alt text](<Screen Shot 2023-11-05 at 11.24.23 AM.png>)
 
 
 ## Roadmap and Future Enhancements:
